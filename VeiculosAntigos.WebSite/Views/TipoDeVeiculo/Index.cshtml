@@ -1,0 +1,38 @@
+﻿@using VeiculosAntigos.Model;
+@model IEnumerable<TipoDeVeiculoDTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 5);
+}
+
+<script type="text/javascript" src="~/Scripts/app/tipo.js"></script>
+
+<h2>Tipos de Veículos</h2>
+
+<div class="grid">
+    <div class="grid-toolbar">
+        <button id="btnAdd" class="btn btn-primary" title="Adicionar Novo">Novo</button>
+        <button id="btnRefresh" class="btn btn-primary" title="Atualizar">Atualizar</button>
+    </div>
+
+    @grid.GetHtml(columns: grid.Columns(
+        grid.Column("Id", header: "Id", canSort: false, style: "col-md-4",
+            format: @<text><span id="Id">@item.Id</span></text>),
+        grid.Column("Tipo", header: "Tipo de Veículo", canSort: true, style: "col-md-6",
+            format: @<text><span id="Tipo">@item.Tipo</span></text>),
+        grid.Column("Id", header: "Ações", canSort: false, style: "col-md-2",
+            format:
+            @<div>
+                <button class="btn btn-primary btnEdit" onclick="VeiculosAntigosApp.TipoDeVeiculo.EditOnClick(this)">Editar</button>
+                <button class="btn btn-primary btnRemove" onclick="VeiculosAntigosApp.TipoDeVeiculo.RemoveOnClick(this)">Excluir</button>
+            </div>)
+    ), htmlAttributes: new { @id = "tblTipoDeVeiculo" })
+</div>
+
+<div class="win" style="display:none;">
+    <div class="win-frame">
+        @Html.Partial("_form", new TipoDeVeiculoDTO())
+    </div>
+</div>

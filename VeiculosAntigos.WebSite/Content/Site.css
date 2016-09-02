@@ -1,0 +1,114 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+form select {
+    width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #357ebd;
+    border-color: blue;
+}
+    .navbar-inverse .navbar-brand {
+        font-weight: bolder;
+        color: #333333;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: black;
+    }
+
+.btn {
+    width: 100px;
+}
+.btnEdit, .btnRemove {
+    width: 65px;
+}
+
+
+.grid { 
+    border: 1px solid gray;
+    padding: 5px;
+}
+    .grid table {
+        width: 100%;
+        height: 100%;
+        border: inherit;
+        border-style: dotted;
+    }
+        .grid table tbody tr td, .grid table thead tr th{
+            padding: 5px;
+        }
+
+        .grid table thead, .grid table thead tr, .grid table thead tr th,
+        .grid table tbody, .grid table tbody tr, .grid table tbody tr {
+            border: inherit;
+        }
+
+    .grid .grid-toolbar {
+        margin: 5px 0;
+    }
+
+.win {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 50px;
+    z-index: 0;
+}
+
+.win > * {
+    opacity: 1;
+}
+
+.win-title {
+    margin: 0;
+    background-color: #357ebd;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.win-frame {
+    background-color: white;
+    border: 2px solid blue;
+    height: 50%;
+    left: 25%;
+    position: relative;
+    top: 15%;
+    width: 50%;
+    z-index: -1;
+}
+
+.win-content {
+    padding: 15px;
+    overflow: auto;
+    max-height: 75%;
+}
+

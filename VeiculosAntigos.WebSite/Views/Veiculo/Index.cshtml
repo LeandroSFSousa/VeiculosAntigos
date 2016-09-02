@@ -1,0 +1,43 @@
+﻿@using VeiculosAntigos.Model;
+@model IEnumerable<VeiculoDTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 5);
+}
+
+<script type="text/javascript" src="~/Scripts/app/veiculo.js"></script>
+
+<h2>Veículos</h2>
+
+<div class="grid">
+    <div class="grid-toolbar">
+        <button id="btnAdd" class="btn btn-primary" title="Adicionar Novo">Novo</button>
+        <button id="btnRefresh" class="btn btn-primary" title="Atualizar">Atualizar</button>
+    </div>
+
+    @grid.GetHtml(columns: grid.Columns(
+        grid.Column("Descricao", header: "Descrição", canSort: true, style: "col-md-3",
+            format: @<text><span id="Descricao">@item.Descricao</span></text>),
+        grid.Column("Fabricante", header: "Fabricante", canSort: true, style: "col-md-3",
+            format: @<text><span id="IdFabricante" style="display:none;">@item.IdFabricante</span><span id="Fabricante">@item.Fabricante</span></text>),
+        grid.Column("Tipo", header: "Tipo", canSort: true, style: "col-md-3",
+            format: @<text><span id="IdTipo" style="display:none;">@item.IdTipo</span><span id="Tipo">@item.Tipo</span></text>),
+        grid.Column("Ano", header: "Ano", canSort: true, style: "col-md-1",
+            format: @<text><span id="Ano">@item.Ano</span></text>),
+        grid.Column("Id", header: "Ações", canSort: false, style: "col-md-2",
+            format:
+            @<div>
+                <span id="Id" style="display:none;">@item.Id</span>
+                <button class="btn btn-primary btnEdit" onclick="VeiculosAntigosApp.Veiculo.EditOnClick(this)">Editar</button>
+                <button class="btn btn-primary btnRemove" onclick="VeiculosAntigosApp.Veiculo.RemoveOnClick(this)">Excluir</button>
+            </div>)
+    ), htmlAttributes: new { @id = "tblVeiculo" })
+</div>
+
+<div class="win" style="display:none;">
+    <div class="win-frame">
+        @Html.Partial("_form", new VeiculoDTO())
+    </div>
+</div>

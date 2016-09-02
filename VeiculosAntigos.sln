@@ -1,0 +1,149 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.WebSite", "VeiculosAntigos.WebSite\VeiculosAntigos.WebSite.csproj", "{A59A884D-F2DB-4CB7-9684-9064E85D8B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Model", "VeiculosAntigos.Model\VeiculosAntigos.Model.csproj", "{7ADA0ADF-E7B7-44FC-AB6C-8FF2C2363A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Repository", "VeiculosAntigos.Repository\VeiculosAntigos.Repository.csproj", "{90990A68-7F4C-4F43-8BC3-AA0A8D1F089E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Service", "VeiculosAntigos.Service\VeiculosAntigos.Service.csproj", "{9DC55476-94BA-4F45-9E4E-8BA093FF7E6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{958F9770-385F-4943-9BCE-29FA05168DEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{182985A2-D873-4DE9-9B6F-75A2A20E0DE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{BA2BF499-E5AC-4959-9F7C-CE0CCEA7FD11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8DE67ED-AB04-4EA4-B439-1DF0FC79FDAB}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseScript\Create Schema Database.sql = DatabaseScript\Create Schema Database.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Data.EF", "VeiculosAntigos.Data.EF\VeiculosAntigos.Data.EF.csproj", "{9F8740AA-A5C3-4F3A-BA85-F8FFE409F8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Repository.Tests", "VeiculosAntigos.Repository.Tests\VeiculosAntigos.Repository.Tests.csproj", "{448F2E2D-3B19-4CF8-80D6-BB0E7CD6FCE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Service.Tests", "VeiculosAntigos.Service.Tests\VeiculosAntigos.Service.Tests.csproj", "{E28CA30C-C751-438C-89FC-FBF81E031480}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{7C53A725-2939-4EC8-8D49-788A27BEFE8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{C48D9FE8-C178-492B-A4B6-0F400D4A0A83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Core", "VeiculosAntigos.Core\VeiculosAntigos.Core.csproj", "{5EF46ED0-EC53-495E-A485-1528FF4A51D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.Core.Tests", "VeiculosAntigos.Core.Tests\VeiculosAntigos.Core.Tests.csproj", "{6FE11049-0279-4BE5-B4F7-782CA4421EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeiculosAntigos.WebApi", "VeiculosAntigos.WebApi\VeiculosAntigos.WebApi.csproj", "{D59D30AD-12F1-4134-97C4-D2D457954CD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A59A884D-F2DB-4CB7-9684-9064E85D8B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59A884D-F2DB-4CB7-9684-9064E85D8B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59A884D-F2DB-4CB7-9684-9064E85D8B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59A884D-F2DB-4CB7-9684-9064E85D8B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ADA0ADF-E7B7-44FC-AB6C-8FF2C2363A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ADA0ADF-E7B7-44FC-AB6C-8FF2C2363A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ADA0ADF-E7B7-44FC-AB6C-8FF2C2363A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ADA0ADF-E7B7-44FC-AB6C-8FF2C2363A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90990A68-7F4C-4F43-8BC3-AA0A8D1F089E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90990A68-7F4C-4F43-8BC3-AA0A8D1F089E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90990A68-7F4C-4F43-8BC3-AA0A8D1F089E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90990A68-7F4C-4F43-8BC3-AA0A8D1F089E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC55476-94BA-4F45-9E4E-8BA093FF7E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC55476-94BA-4F45-9E4E-8BA093FF7E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC55476-94BA-4F45-9E4E-8BA093FF7E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC55476-94BA-4F45-9E4E-8BA093FF7E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8740AA-A5C3-4F3A-BA85-F8FFE409F8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8740AA-A5C3-4F3A-BA85-F8FFE409F8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8740AA-A5C3-4F3A-BA85-F8FFE409F8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8740AA-A5C3-4F3A-BA85-F8FFE409F8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448F2E2D-3B19-4CF8-80D6-BB0E7CD6FCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448F2E2D-3B19-4CF8-80D6-BB0E7CD6FCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448F2E2D-3B19-4CF8-80D6-BB0E7CD6FCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448F2E2D-3B19-4CF8-80D6-BB0E7CD6FCE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E28CA30C-C751-438C-89FC-FBF81E031480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E28CA30C-C751-438C-89FC-FBF81E031480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E28CA30C-C751-438C-89FC-FBF81E031480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E28CA30C-C751-438C-89FC-FBF81E031480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF46ED0-EC53-495E-A485-1528FF4A51D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF46ED0-EC53-495E-A485-1528FF4A51D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF46ED0-EC53-495E-A485-1528FF4A51D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF46ED0-EC53-495E-A485-1528FF4A51D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE11049-0279-4BE5-B4F7-782CA4421EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE11049-0279-4BE5-B4F7-782CA4421EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE11049-0279-4BE5-B4F7-782CA4421EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE11049-0279-4BE5-B4F7-782CA4421EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59D30AD-12F1-4134-97C4-D2D457954CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59D30AD-12F1-4134-97C4-D2D457954CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59D30AD-12F1-4134-97C4-D2D457954CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59D30AD-12F1-4134-97C4-D2D457954CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A59A884D-F2DB-4CB7-9684-9064E85D8B5E} = {958F9770-385F-4943-9BCE-29FA05168DEF}
+		{7ADA0ADF-E7B7-44FC-AB6C-8FF2C2363A0D} = {182985A2-D873-4DE9-9B6F-75A2A20E0DE8}
+		{90990A68-7F4C-4F43-8BC3-AA0A8D1F089E} = {7C53A725-2939-4EC8-8D49-788A27BEFE8F}
+		{9DC55476-94BA-4F45-9E4E-8BA093FF7E6A} = {C48D9FE8-C178-492B-A4B6-0F400D4A0A83}
+		{9F8740AA-A5C3-4F3A-BA85-F8FFE409F8D5} = {BA2BF499-E5AC-4959-9F7C-CE0CCEA7FD11}
+		{448F2E2D-3B19-4CF8-80D6-BB0E7CD6FCE3} = {7C53A725-2939-4EC8-8D49-788A27BEFE8F}
+		{E28CA30C-C751-438C-89FC-FBF81E031480} = {C48D9FE8-C178-492B-A4B6-0F400D4A0A83}
+		{5EF46ED0-EC53-495E-A485-1528FF4A51D6} = {182985A2-D873-4DE9-9B6F-75A2A20E0DE8}
+		{6FE11049-0279-4BE5-B4F7-782CA4421EFD} = {182985A2-D873-4DE9-9B6F-75A2A20E0DE8}
+		{D59D30AD-12F1-4134-97C4-D2D457954CD6} = {958F9770-385F-4943-9BCE-29FA05168DEF}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://leandrosousabr.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VeiculosAntigos.Data.EF\\VeiculosAntigos.Data.EF.csproj
+		SccProjectTopLevelParentUniqueName1 = VeiculosAntigos.sln
+		SccProjectName1 = VeiculosAntigos.Data.EF
+		SccLocalPath1 = VeiculosAntigos.Data.EF
+		SccProjectUniqueName2 = VeiculosAntigos.Model\\VeiculosAntigos.Model.csproj
+		SccProjectTopLevelParentUniqueName2 = VeiculosAntigos.sln
+		SccProjectName2 = VeiculosAntigos.Model
+		SccLocalPath2 = VeiculosAntigos.Model
+		SccProjectUniqueName3 = VeiculosAntigos.Repository.Tests\\VeiculosAntigos.Repository.Tests.csproj
+		SccProjectTopLevelParentUniqueName3 = VeiculosAntigos.sln
+		SccProjectName3 = VeiculosAntigos.Repository.Tests
+		SccLocalPath3 = VeiculosAntigos.Repository.Tests
+		SccProjectUniqueName4 = VeiculosAntigos.Repository\\VeiculosAntigos.Repository.csproj
+		SccProjectTopLevelParentUniqueName4 = VeiculosAntigos.sln
+		SccProjectName4 = VeiculosAntigos.Repository
+		SccLocalPath4 = VeiculosAntigos.Repository
+		SccProjectUniqueName5 = VeiculosAntigos.Service\\VeiculosAntigos.Service.csproj
+		SccProjectTopLevelParentUniqueName5 = VeiculosAntigos.sln
+		SccProjectName5 = VeiculosAntigos.Service
+		SccLocalPath5 = VeiculosAntigos.Service
+		SccProjectUniqueName6 = VeiculosAntigos.WebSite\\VeiculosAntigos.WebSite.csproj
+		SccProjectTopLevelParentUniqueName6 = VeiculosAntigos.sln
+		SccProjectName6 = VeiculosAntigos.WebSite
+		SccLocalPath6 = VeiculosAntigos.WebSite
+		SccProjectUniqueName7 = VeiculosAntigos.Service.Tests\\VeiculosAntigos.Service.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = VeiculosAntigos.sln
+		SccProjectName7 = VeiculosAntigos.Service.Tests
+		SccLocalPath7 = VeiculosAntigos.Service.Tests
+		SccProjectUniqueName8 = VeiculosAntigos.Core\\VeiculosAntigos.Core.csproj
+		SccProjectTopLevelParentUniqueName8 = VeiculosAntigos.sln
+		SccProjectName8 = VeiculosAntigos.Core
+		SccLocalPath8 = VeiculosAntigos.Core
+		SccProjectUniqueName9 = VeiculosAntigos.Core.Tests\\VeiculosAntigos.Core.Tests.csproj
+		SccProjectTopLevelParentUniqueName9 = VeiculosAntigos.sln
+		SccProjectName9 = VeiculosAntigos.Core.Tests
+		SccLocalPath9 = VeiculosAntigos.Core.Tests
+		SccProjectUniqueName10 = VeiculosAntigos.WebApi\\VeiculosAntigos.WebApi.csproj
+		SccProjectTopLevelParentUniqueName10 = VeiculosAntigos.sln
+		SccProjectName10 = VeiculosAntigos.WebApi
+		SccLocalPath10 = VeiculosAntigos.WebApi
+	EndGlobalSection
+EndGlobal
